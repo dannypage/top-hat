@@ -1,7 +1,7 @@
 {
   "name": "top-hat",
   "version": "0.1.0",
-  "description": "A minimal time of possession tracker.",
+  "description": "A minimal time-of-possession tracker.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
