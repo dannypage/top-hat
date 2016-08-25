@@ -1,0 +1,27 @@
+{
+  "name": "top-hat",
+  "version": "0.1.0",
+  "description": "A minimal time of possession tracker.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannypage/top-hat.git"
+  },
+  "keywords": [
+    "top-hat",
+    "possession",
+    "tracker"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/dannypage/top-hat/issues"
+  },
+  "homepage": "https://github.com/dannypage/top-hat#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
