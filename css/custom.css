@@ -1,25 +1,27 @@
-body {
-	font-family: "Futura", "Helvetica", sans-serif;
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none; // You should add some other style for :focus to help UX/a11y
 }
 
+html, body {
+	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+	-webkit-app-region: drag;
+	color: #111111
+}
 
 .center {
 	text-align: center;
 }
 
-.highlight {
-	background-color: #E4F518;
-}
-a.muted-link, a.muted-link:active, a.muted-link:hover {
-	text-decoration: underline;
-	text-decoration-style: dotted;
-	color: #BBC2BE;
-}
-
-
 #dude-display, #not-dude-display {
 	font-size: 24px;
-	font-family: "Courier", sans-serif;
+	font-family: "Courier New", Courier, monospace;
 }
 
 #button-div {
@@ -28,23 +30,35 @@ a.muted-link, a.muted-link:active, a.muted-link:hover {
 	margin-right: auto;
 }
 .btn-default {
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-	padding: 40px 0px 0px 0px;
+	width: 120px;
+	height: 60px;
+	border-radius: 10%;
+	padding: 20px 0px 0px 0px;
 	border: none;
-	background-color: #d8e2dc;
-	box-shadow: 0 10px #777;
+	box-shadow: 0 10px #DDD;
 	margin-bottom: 10px;
 }
 .btn-default:hover, .btn-default:active {
-	background-color: #d8e2dc;
-	box-shadow: 0 7px #777;
+	box-shadow: 0 7px #DDD;
 	margin-top: 3px;
 	margin-bottom: 7px;
 }
-.btn-default.pressed {
-	background-color: #BBC2BE;
+
+.red, .red:hover, .red:active {
+	background-color: #FF4136;
+}
+.red.pressed {
+	background-color: #FF4136;
+	box-shadow: none;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.blue, .blue:hover, .blue.pressed, .blue:active {
+	background-color: #0074D9;
+}
+.blue.pressed {
+	background-color: #0074D9;
 	box-shadow: none;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -52,6 +66,6 @@ a.muted-link, a.muted-link:active, a.muted-link:hover {
 
 #ans {
 	font-size: 24px;
-	font-family: "Courier", sans-serif;
-	color: #BBC2BE;
+	font-family: "Courier New", Courier, monospace;
+	color: #1F1F1F;
 }
